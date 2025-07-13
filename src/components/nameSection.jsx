@@ -8,7 +8,7 @@ import Resume from "/resume.pdf";
 import avatarImage from "../assets/profile.svg";
 
 function NameSection() {
-  const roles = ["developer", "problem solver", "Analyst"];
+  const roles = ["developer"];
   const [displayText, setDisplayText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -112,7 +112,7 @@ function NameSection() {
           </motion.div>
 
           <motion.div
-            className="text-2xl md:text-6xl font-semibold text-gray-500"
+            className="mt-2 text-2xl md:text-6xl font-semibold text-gray-500"
             variants={itemVariants}
           >
             <p className="flex items-center">
@@ -124,19 +124,37 @@ function NameSection() {
             </p>
           </motion.div>
 
+
           <div>
             <motion.div
-              className="text-sm font-roboto md:text-xl text-black max-w-6xl mt-2"
+              className="mt-8 text-sm font-roboto md:text-xl text-black max-w-6xl mt-2"
               variants={itemVariants}
             >
+              
               <p>
-                I'm a passionate coding enthusiast with a strong interest in cybersecurity. 
-                I love solving problems, learning new technologies, and finding creative solutions to challenges. 
-                Whether it's writing code or exploring how to protect systems, I'm always eager to grow and improve.
+                I'm currently studying at Coimbatore Institute of Technology, where I'm learning AI, Cybersecurity, and Blockchain.
+                 I’m skilled in Python, C/C++, and SQL, and I’m also exploring Linux and React to expand my development toolkit.
+              </p>
+            </motion.div>
+          </div>
+
+          <div>
+            <motion.div
+              className="mt-8 text-sm font-roboto md:text-xl text-black max-w-6xl mt-2"
+              variants={itemVariants}
+            >
+              
+              <p>
+                I'm a passionate coding enthusiast with a strong interest in cybersecurity.
+                 I love solving problems, learning new technologies, and finding creative solutions to real-world challenges. 
+                 Whether it's writing code or exploring how to protect systems, I'm always eager to grow and improve.
+
               </p>
             </motion.div>
           </div>
         </div>
+
+
 
         <motion.div
           className="flex flex-wrap gap-6 mt-6"

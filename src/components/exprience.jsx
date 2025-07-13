@@ -1,31 +1,33 @@
 import React, { useState } from "react";
 
 export default function WorkExperience() {
-  const experiences = [
-    {
-      company: "EQ_REV",
-      role: "Software Engineer",
-      department: "EQ_REV",
-      period: "January 2025 - Current",
-      responsibilities: [
-        "Built and deployed a SaaS analytics platform for brands on Zepto, Blinkit, and Instamart, offering pincode-level insights into stock, visibility, and ranking across 1000+ stores in India adopted by top D2C brands like Mokobara and Lifelong.",
-        "Designed and implemented fully automated data pipelines using Selenium and GCP (Cloud Run, BigQuery, Scheduler), saving 100+ manual hours/month and ensuring sub-2-hour daily refreshes.",
-        "Worked in the development of a Shopify Partner App (Remix + BigQuery) for advanced product sorting, increasing catalog engagement by 30%, listed on the Shopify App Store.",
-      ],
-    },
+const experiences = [
+  {
+    company: "SimTestLab",
+    role: "Web Developer Intern",
+    department: "SimTestLab",
+    period: "May 2025 – June 2025",
+    responsibilities: [
+      "Completed a hands-on internship focused on full-stack development using React.js, Next.js, and JavaScript across 4 real-world web modules.",
+      "Engineered a JSON Code Converter that transforms JSON into C, C++, Java, Python, and JavaScript, with a verified 95% conversion accuracy across 200+ test inputs.",
+      "Optimized component lifecycle using React Hooks and Next.js routing, reducing load times by 30% and increasing scalability.",
+      "Executed comprehensive code reviews and testing strategies to ensure product quality and maintainability.",
+    ],
+  },
+  {
+    company: "SourceCorp",
+    role: "UI/UX Developer Intern",
+    department: "SourceCorp",
+    period: "July 2025 – Current",
+    responsibilities: [
+      "Designed and implemented an intuitive, user-friendly UI/UX for a web-based dashboard to enhance client accessibility and engagement.",
+      "Worked closely with stakeholders to translate requirements into clean, responsive interface designs using Figma, HTML/CSS, and React.",
+      "Improved navigation flow and interface consistency, resulting in a 40% increase in user satisfaction based on internal feedback.",
+      "Ensured accessibility compliance and cross-device responsiveness using modern UI frameworks and best design practices.",
+    ],
+  },
+];
 
-    {
-      company: "Crayon'd",
-      role: "Full Stack Developer Intern ",
-      department: "Crayon'd",
-      period: "September 2024 - March 2025",
-      responsibilities: [
-        "Developed and shipped 3+ client-facing products end-to-end, building responsive user interfaces with React and robust backend services using Node.js/Express, leading to a 20% faster feature delivery across teams.",
-        "Collaborated with designers, PMs, and QA to ensure high-quality releases, contributing to smoother sprints and quicker turnaround times on critical features.",
-        "Followed industry-standard Git workflows, wrote clean, modular code, and optimized API performance—significantly improving maintainability and deployment efficiency.",
-      ],
-    },
-  ];
 
   const [selectedExp, setSelectedExp] = useState(0);
 

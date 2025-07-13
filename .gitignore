@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# addition removed
+# Ignore specific component files
+src/components/products.js
+src/components/projects.js
+src/components/footer.js

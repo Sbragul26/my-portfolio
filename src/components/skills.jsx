@@ -15,6 +15,7 @@ import {
   SiGooglecloud,
   SiDocker,
   SiGit,
+  SiNextdotjs ,
 } from "react-icons/si";
 import jsImage from "../assets/java-script.svg";
 import cppImage from "../assets/c-.svg";
@@ -23,14 +24,13 @@ import gitImage from "../assets/git.svg";
 import nodejsImage from "../assets/nodejs.svg";
 import mongodbImage from "../assets/mongoDb.svg";
 import dockerImage from "../assets/docker.svg";
-import SeleniumImage from "../assets/selenium.svg";
 import sqlImage from "../assets/mysql.svg";
 import cImage from "../assets/letter-c.svg";
 import reactImage from "../assets/react.svg";
-import expressImage from "../assets/express.svg";
-import gcpImage from "../assets/gcc.svg";
-import sciketImage from "../assets/sciket-learn.svg";
-import bigqueryImage from "../assets/bigquery.svg";
+import javaImage from "../assets/java.svg";
+import nextjsImage from "../assets/nextjs-icon.svg";
+
+import { FaJava } from "react-icons/fa";
 
 function Skills() {
   // References and animations
@@ -76,22 +76,19 @@ function Skills() {
     { Icon: SiC, name: "C", image: cImage },
     { Icon: SiCplusplus, name: "C++", image: cppImage },
     { Icon: SiPython, name: "Python", image: pythonImage },
+    { Icon: FaJava, name: "Java", image: javaImage }, 
     { Icon: SiJavascript, name: "JavaScript", image: jsImage },
   ];
 
   const frameworksDatabase = [
-    { Icon: SiExpress, name: "Express.js", image: expressImage },
     { Icon: SiNodedotjs, name: "Node.js", image: nodejsImage },
     { Icon: SiReact, name: "React.js", image: reactImage },
     { Icon: SiMongodb, name: "MongoDB", image: mongodbImage },
+    { Icon: SiNextdotjs , name: "Next.js", image: nextjsImage },
     { Icon: SiMysql, name: "MySQL", image: sqlImage },
-    { Icon: SiMysql, name: "BigQuery", image: bigqueryImage },
   ];
 
   const servicesLibraries = [
-    { Icon: SiFirebase, name: "Selenium", image: SeleniumImage },
-    { Icon: SiGit, name: "Sciket-learn", image: sciketImage },
-    { Icon: SiDocker, name: "GCP", image: gcpImage },
     { Icon: SiDocker, name: "Docker", image: dockerImage },
     { Icon: SiGooglecloud, name: "Git hub", image: gitImage },
   ];

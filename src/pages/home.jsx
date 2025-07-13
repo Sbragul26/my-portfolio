@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import toastify CSS
 import NameSection from "../components/nameSection";
 import Skills from "../components/skills";
 import WorkExperience from "../components/exprience";
-import ProjectsList from "../components/products";
-import OtherProjects from "../components/projects";
-import Footer from "../components/footer";
 import NavBar from "../components/navBar";
 
 function HomePage() {
@@ -26,6 +25,59 @@ function HomePage() {
 
     // Cleanup
     return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Toast messages to cycle through
+  const toastMessages = [
+    // JSX element for the first toast
+    <>
+      This site's dark web mirror 👉{" "}
+      <a
+        href="http://exampledarkmirror.onion"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-purple-400 underline"
+      >
+        here
+      </a>
+    </>,
+    // Plain strings for others
+
+  ];
+
+
+  // Trigger rotating toasts every 10 seconds
+  useEffect(() => {
+    let messageIndex = 0;
+
+    const interval = setInterval(() => {
+      toast.success(toastMessages[messageIndex], {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        style: {
+          width: "350px",
+          background: "linear-gradient(135deg, #000000, #333333)",
+          color: "#ffffff",
+          fontSize: "16px",
+          fontWeight: "bold",
+          borderRadius: "8px",
+          boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)",
+          border: "1px solid #555555",
+        },
+      });
+
+      // Move to the next message, looping back to 0 if at the end
+      messageIndex = (messageIndex + 1) % toastMessages.length;
+    }, 8000); // 10 seconds
+
+    // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, []);
 
   // Function to scroll to a section
@@ -54,6 +106,18 @@ function HomePage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <section className="w-full">
         <NavBar onNavigate={scrollToSection} />
       </section>
@@ -76,15 +140,19 @@ function HomePage() {
           <section className="mt-12 w-full" id="skills">
             <Skills />
           </section>
+          {/*
           <section id="products" className="w-full">
             <ProjectsList />
           </section>
+          
           <section id="projects" className="w-full">
             <OtherProjects />
           </section>
+          
           <section id="contact" className="w-full">
             <Footer />
           </section>
+          */}
         </div>
 
         {/* Right spacer */}

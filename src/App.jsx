@@ -1,6 +1,6 @@
 import CppCompilerLoading from "./components/loading";
 import { Routes, Route } from "react-router-dom";
-import ProjectDetailPage from "./pages/projectView";
+
 
 function App() {
   return (
