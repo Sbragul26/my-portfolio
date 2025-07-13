@@ -25,10 +25,9 @@ dist-ssr
 
 # addition removed
 # Ignore specific component files
-src/components/products.jsx
-src/components/projects.jsx
-src/components/footer.jsx
-
 src/components/footer.jsx
 src/components/projects.jsx
 src/components/products.jsx
+src/components/customDrecrytion.jsx
+src/components/decryptedText.jsx
+src/components/dock.jsx
