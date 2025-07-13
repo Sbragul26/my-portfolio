@@ -48,10 +48,8 @@ function HomePage() {
 
   // Trigger rotating toasts every 10 seconds
   useEffect(() => {
-    let messageIndex = 0;
-
-    const interval = setInterval(() => {
-      toast.success(toastMessages[messageIndex], {
+    const timeout = setTimeout(() => {
+      toast.success(toastMessages[0], {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
@@ -71,13 +69,10 @@ function HomePage() {
           border: "1px solid #555555",
         },
       });
+    }, 5000); 
 
-      // Move to the next message, looping back to 0 if at the end
-      messageIndex = (messageIndex + 1) % toastMessages.length;
-    }, 8000); // 10 seconds
-
-    // Cleanup interval on unmount
-    return () => clearInterval(interval);
+    // Cleanup timeout on unmount
+    return () => clearTimeout(timeout);
   }, []);
 
   // Function to scroll to a section
