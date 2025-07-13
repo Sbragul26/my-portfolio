@@ -28,3 +28,7 @@ dist-ssr
 src/components/products.jsx
 src/components/projects.jsx
 src/components/footer.jsx
+
+src/components/footer.jsx
+src/components/projects.jsx
+src/components/products.jsx
