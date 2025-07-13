@@ -33,7 +33,7 @@ function HomePage() {
     <>
       This site's dark web mirror 👉{" "}
       <a
-        href="http://exampledarkmirror.onion"
+        href="http://rag-mirror.onion"
         target="_blank"
         rel="noopener noreferrer"
         className="text-purple-400 underline"
