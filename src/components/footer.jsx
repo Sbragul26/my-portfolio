@@ -24,15 +24,17 @@ export default function ContactSection() {
                   Send me an email at
                 </p>
                 <a
-                  href="mailto:"
+                  href="mailto:sbragul26@gmail.com"
                   className="text-xl sm:text-2xl font-medium font-saira hover:underline break-words"
                 >
-                dummy main
+                Sbragul
                 </a>
+                {/*
                 <p className="text-gray-600 text-lg sm:text-2xl mt-1">
                   Ideas this big don't belong in DMs. Email me — let's architect
                   the impossible.
                 </p>
+                */}
               </div>
             </div>
 
@@ -42,17 +44,10 @@ export default function ContactSection() {
                 Connect with me on social media
               </p>
               <div className="flex space-x-4">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
-                >
-                  <Instagram size={20} />
-                </a>
+
 
                 <a
-                  href=""
+                  href="https://www.linkedin.com/in/ragulbalajii/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"
@@ -61,7 +56,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href=""
+                  href="https://github.com/Sbragul26"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 border border-gray-300 rounded-md hover:bg-gray-100 transition-colors"

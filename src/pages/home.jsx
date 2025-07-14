@@ -141,7 +141,7 @@ function HomePage() {
           <section className="mt-12 w-full" id="skills">
             <Skills />
           </section>
-          {/*
+          
           <section id="products" className="w-full">
             <ProjectsList />
           </section>
@@ -149,11 +149,11 @@ function HomePage() {
           <section id="projects" className="w-full">
             <OtherProjects />
           </section>
-          
+     
           <section id="contact" className="w-full">
             <Footer />
           </section>
-          */}
+
         </div>
 
         {/* Right spacer */}

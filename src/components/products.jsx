@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import eqrevImage from "../assets/eqrev.jpg"; // Import your image here
+import smartrxImage from "../assets/smartrx.png";
 
 const ProjectsList = () => {
   // Sample project data
@@ -21,26 +22,7 @@ const projects = [
       "Google Maps API",
       "AI",
     ],
-    previewLink: "http://localhost:5173", // Or your live deployed link
-  },
-  {
-    id: 2,
-    title: "TradeGuard - AI-Powered DApp",
-    role: "Blockchain & AI Developer",
-    description:
-      "TradeGuard is an AI-powered decentralized trading platform built on the Aptos blockchain. It enables traders to manage risk effectively by automatically adjusting leverage, hedging positions, and preventing liquidation. With real-time market data and AI predictions, it executes smart trades to optimize profits and minimize losses. Users can connect Martian Wallet and trade using Move smart contracts. The platform includes features like live blockchain feeds, price charts, crypto news, exchange tools, and wallet integrations.",
-    image: tradeguardImage, // Replace with your image path like import tradeguardImage from '../assets/tradeguard.png'
-    technologies: [
-      "React",
-      "TailwindCSS",
-      "Node.js",
-      "Express",
-      "Aptos",
-      "Move",
-      "AI Model",
-      "Martian Wallet",
-    ],
-    previewLink: "http://localhost:5173", // Or your deployed app link
+    previewLink: "https://smartrx.vercel.app/", // Or your live deployed link
   },
 ];
 

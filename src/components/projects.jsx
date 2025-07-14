@@ -9,58 +9,53 @@ export default function OtherProjects() {
   const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
 
-  const projects = [
-    {
-      title: "Growth Guardian",
-      subtitle: "HackIt'25 Winner",
-      description:
-        "Led the development of a full-stack financial management platform with live market integration. Integrated 5+ tools, including a 95% accurate scam detector, smart chatbot, ML-powered stock simulator, and gamified learning modules to help users learn, practice, and make informed financial decisions confidently.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "Python",
-        "Flask",
-        "Express.js",
-      ],
-      githubLink: "",
-      appLink: "",
-      isPrivate: false,
-      hosted: true,
-    },
-    {
-      title: "India Post AI Platform",
-      subtitle: "Smart India Hackathon 2024 Finalist",
-      description:
-        "Built with Next.js, LightGBM, and RAG chatbot, this platform personalizes India Post's outreach across 600K+ villages. It recommends top-3 schemes per user, automates demographic and trend analysis via ETL and Selenium, cutting manual work by 80% and boosting efficiency by 40%.",
-      technologies: [
-        "Next.js",
-        "Python",
-        "React.js",
-        "Rag",
-        "MongoDB",
-        "PostgreSQL",
-        "LightGBM",
-        "Selenium",
-      ],
-      githubLink: "https://github.com/girish-gaikwad/PostalService",
-      appLink: "https://github.com/girish-gaikwad/PostalService",
-      isPrivate: false,
-      hosted: false,
-    },
-
-    {
-      title: "Here to Solve",
-      subtitle: " ",
-      description:
-        "ProblemSolver is a peer-to-peer tech help platform for college students, inspired by Fiverr and Instagram. Students post problems with rewards, and others solve them to earn. With over 1 lakh students seeking such solutions each semester, it fills a real and growing need in the student tech community",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
-      githubLink: "",
-      appLink: "https://here-to-solve.vercel.app/",
-      isPrivate: true,
-      hosted: true,
-    },
-  ];
+const projects = [
+  {
+    id: 1,
+    title: "TradeGuard - AI-Powered DApp",
+    subtitle: "Blockchain & AI Developer",
+    description:
+      "TradeGuard is an AI-powered decentralized trading platform built on the Aptos blockchain. It enables traders to manage risk effectively by automatically adjusting leverage, hedging positions, and preventing liquidation. With real-time market data and AI predictions, it executes smart trades to optimize profits and minimize losses. Users can connect Martian Wallet and trade using Move smart contracts. The platform includes features like live blockchain feeds, price charts, crypto news, exchange tools, and wallet integrations.",
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "Aptos",
+      "Move",
+      "AI Model",
+      "Martian Wallet",
+    ],
+    githubLink: "https://github.com/Sbragul26/wqi.dev", // Add GitHub link if available
+    appLink: "https://tradeguard-wqi.vercel.app/", // Replace with deployed link if available
+    isPrivate: false, // Assumed based on context
+    hosted: true, // Based on provided previewLink
+  },
+  {
+    id: 2,
+    title: "Nexora Creations - Agency Portfolio",
+    subtitle: "Frontend Developer",
+    description:
+      "Developed a professional portfolio website for Nexora Creations, a digital agency, showcasing services, projects, and client testimonials. The platform is built with a modern, responsive design to attract potential clients and highlight the agency's creative and technical expertise. Features include dynamic project galleries, contact forms, and smooth animations for an engaging user experience.",
+    technologies: ["React", "TailwindCSS", "Node.js", "Express"], // Assumed based on "using react ..etc.."
+    githubLink: "https://github.com/Sbragul26/nexora-creations", // Add GitHub link if available
+    appLink: "https://nexora-creations.vercel.app/", // Add deployed link if available
+    isPrivate: false, // Assumed based on typical portfolio visibility
+    hosted: true, // Assumed as portfolios are typically hosted
+  },
+  {
+    id: 3,
+    title: "SMS Spam Classifier",
+    subtitle: "Machine Learning Developer",
+    description:
+      "Built an SMS spam classifier using machine learning techniques to detect and filter spam messages with high accuracy. The model processes text data, identifies patterns, and classifies messages as spam or non-spam. The project includes a user-friendly interface for testing and integrating the classifier with messaging systems.",
+    technologies: ["Python", "Scikit-learn", "Pandas", "React", "Flask"], // Assumed ML and frontend tech
+    githubLink: "https://github.com/Sbragul26/SMS-Spam-classifier", // Add GitHub link if available
+    appLink: "", // Add deployed link if available
+    isPrivate: false, // Assumed based on typical project visibility
+    hosted: false, // Assumed as ML projects may not always be hosted
+  },
+];
 
   // Setup intersection observer for entrance animation
   useEffect(() => {
