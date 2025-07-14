@@ -7,6 +7,12 @@ import Skills from "../components/skills";
 import WorkExperience from "../components/exprience";
 import NavBar from "../components/navBar";
 
+
+import ProjectsList from "../components/products";
+import OtherProjects from "../components/projects";
+import Footer from "../components/footer";
+
+
 function HomePage() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMobile, setIsMobile] = useState(false);

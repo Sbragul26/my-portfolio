@@ -23,8 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# addition removed
-# Ignore specific component files
-src/components/footer.jsx
-src/components/projects.jsx
-src/components/products.jsx
+
