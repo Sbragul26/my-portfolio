@@ -77,9 +77,6 @@ export default function ContactSection() {
             >
               Talk()
             </a>
-            <p className="font-bold text-sm text-gray-600">
-              Overridden in every great collab.
-            </p>
           </div>
         </div>
 
